@@ -1,0 +1,154 @@
+body {
+  background-color: #e0e9ef;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", verdana, arial, sans-serif;
+  color: #ffffff;
+  background-color: #202822;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Navbar {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #202822;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 95%;
+  width: 992px;
+}
+
+.Navbar .content .home {
+  font-size: 1.5rem;
+}
+
+.Navbar .content .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Navbar .content .links a {
+  line-height: 70px;
+  width: 100px;
+  display: block;
+  text-align: center;
+}
+
+.Navbar .content .links a:hover {
+  background-color: #647d6a;
+}
+
+.Landing .image {
+  background-image: url("../assets/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Landing .cover {
+  background-color: rgba(0, 0, 5, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Landing .image, .Landing .cover {
+  height: 800px;
+}
+
+.Landing h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.Landing h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  font-style: italic;
+  margin: 8pt 0 36pt 0;
+}
+
+.Footer {
+  padding-bottom: 36px;
+}
+
+.Footer div {
+  width: 100%;
+  text-align: center;
+}
+
+.Footer .contact {
+  padding-bottom: 12px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #f0ffff;
+  margin: 0;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  color: #f0ffff;
+  background-color: #202822;
+  padding: 20px 50px;
+  text-align: center;
+  max-width: 100%;
+  font-size: 18pt;
+  font-weight: 100;
+  border-radius: 10px;
+}
+
+.btn-action {
+  background-color: #44a220;
+}
+
+.btn-action:hover {
+  background: #4bb323;
+}
+/*# sourceMappingURL=style.css.map */
