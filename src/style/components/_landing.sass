@@ -1,24 +1,65 @@
 .Landing
   .image
+    position: fixed
     background-image: url("../assets/bg.jpg")
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    z-index: -1
   .cover
-    background-color: rgba(0,0,5,.2)
+    background-color: rgba(0,5,10,.2)
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
+    text-align: center
+    .btn 
+      margin-bottom: 60px
+      @media screen and (max-width: $md)
+        margin-bottom: 30px
   .image, .cover
-    height: 800px
-  h1 
+    height: 640px
+    width: 100%
+    @media screen and (max-width: $md)
+      height: 300px
+  .h1, .h2 
+    display: flex 
+    flex-wrap: wrap
+  .h1 
     font-size: 4rem
     font-weight: 100
     margin: 0
-  h2 
+  .h2 
     font-size: 2rem
     font-weight: 100
     font-style: italic
     margin: 8pt 0 36pt 0
+  @media screen and (max-width: $lg)
+    .h1 
+      font-size: 3rem
+    .h2 
+      font-size: 1.5rem
+  @media screen and (max-width: $md)
+    .h1 
+      font-size: 2rem
+    .h2 
+      font-size: 1rem
+      margin-bottom: 20pt
+    .h1 div, .h2 div
+      width: 100%
+
+
+  .content 
+    padding: 0 0 64px
+    color: black
+    background-color: $brand-white
+    display: flex 
+    flex-direction: column 
+    align-items: center
+    font-size: 18pt
+
+    .section 
+      padding: 54px 0 30px
+      width: 80vw 
+      max-width: 660px 
   

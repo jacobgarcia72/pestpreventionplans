@@ -2,15 +2,23 @@
   display: block
   text-decoration: none
   color: $brand-white
-  background-color: $brand-dark
-  padding: 20px 50px
+  padding: 15px 20px
   text-align: center
-  max-width: 100%
+  max-width: 90vw
+  min-width: 200px
   font-size: 18pt
   font-weight: 100
   border-radius: 10px
+  box-shadow: 5px 4px 12px rgba(0,0,0,.7)
+  background-color: $brand-btn
+  &:hover
+    background: lighten($brand-btn, 14%)
 
 .btn-action
   background-color: $brand-action
+  padding: 25px 55px
+  @media screen and (max-width: $md)
+    padding: 16px 20px
+    font-size: 16pt
   &:hover
-    background: lighten($brand-action, 4%)
+    background: lighten($brand-action, 6%)
