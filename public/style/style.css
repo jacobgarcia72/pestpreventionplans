@@ -1,5 +1,5 @@
 body {
-  background-color: #e0e9ef;
+  background-color: #203a20;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,6 @@ body {
   padding: 0;
   font-family: "Roboto", verdana, arial, sans-serif;
   color: #ffffff;
-  background-color: #203822;
   word-wrap: break-word;
 }
 
@@ -23,7 +22,7 @@ body {
   z-index: 5;
   top: 0;
   width: 100%;
-  background-color: #203822;
+  background-color: #203a20;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +40,7 @@ body {
   left: 0;
   z-index: 6;
   text-align: center;
+  cursor: pointer;
 }
 
 .Navbar .content {
@@ -89,8 +89,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
   .Navbar .content .links a {
@@ -108,60 +109,12 @@ body {
 }
 
 .Navbar .content .links a:hover {
-  background-color: #58995d;
+  background-color: #1fa020;
 }
 
 .Navbar .content .links a.social {
   width: 70px;
   font-size: 1.2rem;
-}
-
-.Landing .image {
-  position: fixed;
-  background-image: url("../assets/bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
-.Landing .cover {
-  background-color: rgba(0, 5, 10, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-.Landing .cover .btn {
-  margin-bottom: 60px;
-}
-
-@media screen and (max-width: 768px) {
-  .Landing .cover .btn {
-    margin-bottom: 30px;
-  }
-}
-
-.Landing .image, .Landing .cover {
-  height: 640px;
-  width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .Landing .image, .Landing .cover {
-    height: 300px;
-  }
 }
 
 .Landing .h1, .Landing .h2 {
@@ -179,7 +132,7 @@ body {
 }
 
 .Landing .h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 100;
   font-style: italic;
   margin: 8pt 0 36pt 0;
@@ -207,10 +160,28 @@ body {
   }
 }
 
-.Landing .content {
-  padding: 0 0 64px;
-  color: black;
-  background-color: #fafffd;
+.Landing .page-content .section {
+  text-align: center;
+  padding: 54px 0 38px;
+}
+
+@media screen and (max-width: 768px) {
+  .Landing .page-content .section {
+    padding: 42px 0 24px;
+  }
+}
+
+.Reviews .reviewer {
+  font-size: 15pt;
+  padding-bottom: 48pt;
+  font-style: italic;
+}
+
+.Reviews .btn {
+  margin-top: 32px;
+}
+
+.Contact form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,21 +189,64 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 18pt;
+  width: 400px;
+  max-width: 90vw;
 }
 
-.Landing .content .section {
-  padding: 54px 0 30px;
-  width: 80vw;
-  max-width: 660px;
+.Contact form input, .Contact form textarea {
+  font-size: 14pt;
+  font-family: "Roboto", verdana, arial, sans-serif;
+  margin: 6px 0;
+  padding: 6px;
+  width: 400px;
+  max-width: 90vw;
+}
+
+.Contact form button {
+  border: none;
+  margin: 12px;
+}
+
+.Contact .disclaimer {
+  margin: 6px 0 0;
+  width: 90vw;
+  max-width: 400px;
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.Account .h1 {
+  font-size: 36pt;
+  text-transform: uppercase;
+}
+
+.Account .h2 {
+  font-size: 16pt;
+  padding: 12pt 0 24pt;
+}
+
+@media screen and (max-width: 768px) {
+  .Account .h1 {
+    font-size: 24pt;
+  }
+  .Account .h2 {
+    font-size: 14pt;
+  }
+}
+
+.Account .sign-in {
+  cursor: pointer;
+}
+
+.Account .sign-in img {
+  width: 300px;
+  max-width: 60vw;
+  padding-bottom: 24pt;
 }
 
 .Footer {
   padding: 30px 0 48px;
-  background-color: #203822;
+  background-color: #203a20;
 }
 
 .Footer > div {
@@ -262,11 +276,161 @@ body {
           justify-content: center;
 }
 
+.Splash .caption {
+  font-size: 36pt;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .Splash .caption {
+    font-size: 24pt;
+  }
+}
+
+.Splash .image {
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.Splash .cover {
+  background-color: rgba(0, 5, 10, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.Splash .cover .btn {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .Splash .cover .btn {
+    margin-bottom: 30px;
+  }
+}
+
+.Splash .image, .Splash .cover {
+  height: 360px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .Splash .image, .Splash .cover {
+    height: 140px;
+  }
+}
+
+.Splash.large .image, .Splash.large .cover {
+  height: 640px;
+}
+
+@media screen and (max-width: 768px) {
+  .Splash.large .image, .Splash.large .cover {
+    height: 300px;
+  }
+}
+
 a {
   display: block;
   text-decoration: none;
   color: #fafffd;
   margin: 0;
+}
+
+.page-content {
+  padding: 0 0 64px;
+  color: black;
+  background-color: #fafffd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17pt;
+}
+
+.page-content .header {
+  margin: 0 auto 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.page-content .section {
+  padding: 36px 0 30px;
+  width: 80vw;
+  max-width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .page-content .section {
+    padding-top: 18px;
+  }
+}
+
+.page-content .section p {
+  font-size: 16pt;
+  margin-top: 0;
+}
+
+.page-content .connect {
+  font-size: 54pt;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-content .connect a {
+  margin: 0 15px;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.page-content .connect a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.page-content .connect a#facebook {
+  color: #3b5998;
+}
+
+.page-content .connect a#messenger {
+  color: #0078ff;
+}
+
+.page-content .connect a#yelp {
+  color: #af0606;
 }
 
 .btn {
@@ -280,8 +444,6 @@ a {
   font-size: 18pt;
   font-weight: 100;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.7);
-          box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.7);
   background-color: #306090;
 }
 
@@ -290,7 +452,7 @@ a {
 }
 
 .btn-action {
-  background-color: #44a220;
+  background-color: #1fa020;
   padding: 25px 55px;
 }
 
@@ -302,6 +464,6 @@ a {
 }
 
 .btn-action:hover {
-  background: #4fbc25;
+  background: #24ba25;
 }
 /*# sourceMappingURL=style.css.map */

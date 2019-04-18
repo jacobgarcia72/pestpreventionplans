@@ -6,7 +6,6 @@ export default () => (
   <div className="Footer">
 
     <div className="contact">
-      <div className="header">Contact</div>
       <a href="tel:512.675.0046"> 
         <p>(512) 675-0046</p>
       </a>

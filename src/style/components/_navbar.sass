@@ -5,7 +5,7 @@
   width: 100%
   background-color: $brand-dark 
   display: flex
-  justify-content: center
+  justify-content: center 
   align-items: center
   #menu-icon 
     position: fixed 
@@ -13,6 +13,7 @@
     left: 0
     z-index: 6
     text-align: center
+    cursor: pointer
   .content
     display: flex
     flex-wrap: wrap
@@ -33,7 +34,7 @@
         background-color: rgba(0,0,0,.92)
         height: 100vh
         flex-direction: column
-        justify-content: space-around
+        justify-content: center
         width: 100%
         a 
           min-width: 100vw
@@ -44,7 +45,7 @@
         display: block
         text-align: center
         &:hover 
-          background-color: lighten($brand-dark, 30%)
+          background-color: $brand-action
       a.social
         width: 70px
         font-size: 1.2rem

@@ -1,0 +1,43 @@
+
+
+.page-content 
+  padding: 0 0 64px
+  color: black
+  background-color: $brand-white
+  display: flex 
+  flex-direction: column 
+  align-items: center
+  font-size: 17pt
+
+  .header 
+    margin: 0 auto 10px
+    width: 100%
+    text-align: center
+
+  .section 
+    padding: 36px 0 30px
+    width: 80vw 
+    max-width: 640px 
+    display: flex  
+    flex-direction: column 
+    align-items: center
+    @media screen and (max-width: $md)
+      padding-top: 18px
+    p 
+      font-size: 16pt
+      margin-top: 0
+
+  .connect 
+    font-size: 54pt 
+    display: flex
+    a 
+      margin: 0 15px
+      transition: transform 200ms
+      &:hover 
+        transform: scale(1.1)
+    a#facebook 
+      color: rgb(59, 89, 152)
+    a#messenger 
+      color: rgb(0,120,255)
+    a#yelp 
+      color: rgb(175, 6, 6)
