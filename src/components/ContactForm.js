@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-import {updateUser} from '../actions/users'
-
 export default class Form extends Component {
 
   constructor(props) {
@@ -12,12 +10,6 @@ export default class Form extends Component {
     }
   }
 
-  saveUserInfo = ()=> {
-    if (!this.props.signedIn) return;
-    const phone = document.getElementById('input-phone').value;
-    const name = document.getElementById('input-name').value;
-    updateUser({phone, name});
-  }
 
   handleChange = e=> {
     this.setState({[e.target.name]: e.target.value})
@@ -29,7 +21,7 @@ export default class Form extends Component {
     return (
       <div className="section"> 
         <div className="header">{caption}:</div>
-        <form method="POST" action="https://formspree.io/PestPreventionPlans@gmail.com" onSubmit={this.saveUserInfo}>
+        <form method="POST" action="https://formspree.io/PestPreventionPlans@gmail.com">
           <input type="name" name="name" id="input-name" placeholder="Your name*" value={name} onChange={this.handleChange} />
           <input type="email" name="email" id="input-email" placeholder="Your email address*" value={email} onChange={this.handleChange} />
           <input type="phone" name="phone" id="input-phone" placeholder="Your phone number" value={phone} onChange={this.handleChange} />

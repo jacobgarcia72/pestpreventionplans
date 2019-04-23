@@ -9,27 +9,10 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Account from './components/Account';
 
-import {getSignIn} from './actions/users';
 
 import ScrollToTop from './ScrollToTop';
 
 class App extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {user: false}
-  }
-
-  componentDidMount = async ()=> {  
-    const setUser = async user => {
-      this.setState({user});
-    }
-    const user = await getSignIn(setUser);
-    if (user) {
-      setUser(user);
-    }
-  }
-
 
   render() {
     return (
@@ -40,7 +23,7 @@ class App extends Component {
           <Route exact path="/about" component={ About } />
           <Route exact path="/reviews" component={ Reviews } />
           <Route exact path="/contact" component={ Contact } />
-          <Route exact path="/account" render={props => <Account {...props} user={this.state.user} />} />
+          <Route exact path="/account" component={ Account } />
           <Footer />
         </ScrollToTop>
       </BrowserRouter>
