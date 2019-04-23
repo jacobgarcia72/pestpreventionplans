@@ -112,11 +112,6 @@ body {
   background-color: #1fa020;
 }
 
-.Navbar .content .links a.social {
-  width: 70px;
-  font-size: 1.2rem;
-}
-
 .Landing .h1, .Landing .h2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,33 +176,16 @@ body {
   margin-top: 32px;
 }
 
-.Account .h1 {
-  font-size: 36pt;
-  text-transform: uppercase;
+.Account iframe {
+  margin: 0;
+  width: 100%;
+  max-width: 840px;
+  height: 680px;
+  border: none;
 }
 
-.Account .h2 {
-  font-size: 16pt;
-  padding: 12pt 0 24pt;
-}
-
-@media screen and (max-width: 768px) {
-  .Account .h1 {
-    font-size: 24pt;
-  }
-  .Account .h2 {
-    font-size: 14pt;
-  }
-}
-
-.Account .sign-in {
-  cursor: pointer;
-}
-
-.Account .sign-in img {
-  width: 300px;
-  max-width: 60vw;
-  padding-bottom: 24pt;
+.Account .page-content {
+  padding: 0;
 }
 
 .Footer {
