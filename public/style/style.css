@@ -181,40 +181,6 @@ body {
   margin-top: 32px;
 }
 
-.Contact form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 400px;
-  max-width: 90vw;
-}
-
-.Contact form input, .Contact form textarea {
-  font-size: 14pt;
-  font-family: "Roboto", verdana, arial, sans-serif;
-  margin: 6px 0;
-  padding: 6px;
-  width: 400px;
-  max-width: 90vw;
-}
-
-.Contact form button {
-  border: none;
-  margin: 12px;
-}
-
-.Contact .disclaimer {
-  margin: 6px 0 0;
-  width: 90vw;
-  max-width: 400px;
-  font-size: 10pt;
-  font-style: italic;
-}
-
 .Account .h1 {
   font-size: 36pt;
   text-transform: uppercase;
@@ -324,7 +290,7 @@ body {
 }
 
 .Splash .image, .Splash .cover {
-  height: 360px;
+  height: 300px;
   width: 100%;
 }
 
@@ -440,11 +406,13 @@ a {
   padding: 15px 20px;
   text-align: center;
   max-width: 90vw;
-  min-width: 200px;
+  min-width: 250px;
   font-size: 18pt;
   font-weight: 100;
   border-radius: 10px;
   background-color: #306090;
+  cursor: pointer;
+  margin-bottom: 12px;
 }
 
 .btn:hover {
@@ -465,5 +433,147 @@ a {
 
 .btn-action:hover {
   background: #24ba25;
+}
+
+.link {
+  font-size: 13pt;
+  color: darkblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.double-wide {
+  width: 535px;
+  max-width: 98vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 95vw;
+  max-width: 640px;
+  font-size: 11pt;
+}
+
+.table a {
+  color: #0000bb;
+  text-decoration: underline;
+}
+
+.table .th, .table .tr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table .th div, .table .tr div {
+  padding: 0 3px;
+  border: black solid 1px;
+}
+
+.table .th div:nth-child(1), .table .tr div:nth-child(1) {
+  -webkit-box-flex: 12;
+      -ms-flex: 12;
+          flex: 12;
+  border-right: none;
+}
+
+.table .th div:nth-child(2), .table .tr div:nth-child(2) {
+  -webkit-box-flex: 12;
+      -ms-flex: 12;
+          flex: 12;
+  border-right: none;
+}
+
+.table .th div:nth-child(3), .table .tr div:nth-child(3) {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  border-right: none;
+}
+
+.table .th div:nth-child(4), .table .tr div:nth-child(4) {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  border-right: none;
+}
+
+.table .th div:nth-child(5), .table .tr div:nth-child(5) {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  border-right: none;
+}
+
+.table .th div:nth-child(6), .table .tr div:nth-child(6) {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.table .th {
+  background-color: #eff3fa;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  max-width: 90vw;
+}
+
+form input, form textarea {
+  font-size: 14pt;
+  font-family: "Roboto", verdana, arial, sans-serif;
+  margin: 6px 0;
+  padding: 6px;
+  width: 400px;
+  max-width: 90vw;
+}
+
+form button {
+  border: none;
+  margin: 12px;
+}
+
+.disclaimer {
+  margin: 6px 0 0;
+  width: 90vw;
+  max-width: 400px;
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

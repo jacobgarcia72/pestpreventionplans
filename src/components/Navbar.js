@@ -22,8 +22,8 @@ export default class Navbar extends Component {
     let navbar = document.querySelector('.Navbar');
     if (!navbar || this.state.mobileDisplay) return;
     let height = 50;
-    if (window.scrollY < 90) {
-      height = 80 - Math.round(window.scrollY/3);
+    if (window.scrollY < 150) {
+      height = 80 - Math.round(window.scrollY/5);
     }
     let links = document.getElementById('links');
     let whiteSpace = document.getElementById('white-space');
