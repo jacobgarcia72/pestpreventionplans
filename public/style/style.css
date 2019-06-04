@@ -310,6 +310,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 17pt;
+  line-height: 25pt;
 }
 
 .page-content .header {
