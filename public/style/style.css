@@ -130,13 +130,11 @@ body {
 
 .Landing .h1 {
   font-size: 4rem;
-  font-weight: 100;
   margin: 0;
 }
 
 .Landing .h2 {
   font-size: 1.8rem;
-  font-weight: 100;
   font-style: italic;
   margin: 8pt 0 36pt 0;
 }
@@ -422,7 +420,6 @@ a {
   max-width: 90vw;
   min-width: 250px;
   font-size: 18pt;
-  font-weight: 100;
   border-radius: 10px;
   background-color: #306090;
   cursor: pointer;
