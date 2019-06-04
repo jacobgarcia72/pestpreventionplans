@@ -74,6 +74,12 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .Navbar .content .home {
+    font-size: 1.2rem;
+  }
+}
+
 .Navbar .content .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,7 +89,7 @@ body {
 @media screen and (max-width: 768px) {
   .Navbar .content .links {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.92);
+    background-color: rgba(0, 0, 0, 0.95);
     height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -96,6 +102,8 @@ body {
   }
   .Navbar .content .links a {
     min-width: 100vw;
+    -webkit-transform: translateY(-3vh);
+            transform: translateY(-3vh);
   }
   .Navbar .content .links a:hover {
     background-color: #306090 !important;
@@ -157,19 +165,25 @@ body {
 
 .Landing .page-content .section {
   text-align: center;
-  padding: 54px 0 38px;
+  padding: 48px 0 38px;
 }
 
 @media screen and (max-width: 768px) {
   .Landing .page-content .section {
-    padding: 42px 0 24px;
+    padding: 25px 0 20px;
   }
 }
 
 .Reviews .reviewer {
   font-size: 15pt;
-  padding-bottom: 48pt;
+  padding-bottom: 32pt;
   font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .Reviews .reviewer {
+    padding-bottom: 18pt;
+  }
 }
 
 .Reviews .btn {
@@ -193,6 +207,12 @@ body {
   background-color: #203a20;
 }
 
+@media screen and (max-width: 768px) {
+  .Footer {
+    padding: 2px 0 28px;
+  }
+}
+
 .Footer > div {
   width: 80vw;
   text-align: center;
@@ -202,6 +222,12 @@ body {
 .Footer .contact {
   font-size: 14pt;
   padding-bottom: 38px;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer .contact {
+    padding-bottom: 24px;
+  }
 }
 
 .Footer .contact .header {
@@ -313,13 +339,21 @@ a {
   line-height: 25pt;
 }
 
+@media screen and (max-width: 768px) {
+  .page-content {
+    font-size: 14pt;
+    line-height: 20pt;
+    padding: 0 0 24px;
+  }
+}
+
 .page-content .header {
   margin: 0 auto 10px;
   width: 100%;
   text-align: center;
 }
 
-.page-content .section {
+.page-content div.section {
   padding: 36px 0 30px;
   width: 80vw;
   max-width: 640px;
@@ -336,14 +370,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .page-content .section {
-    padding-top: 18px;
+  .page-content div.section {
+    padding: 10px 0 10px;
   }
-}
-
-.page-content .section p {
-  font-size: 16pt;
-  margin-top: 0;
 }
 
 .page-content .connect {
@@ -351,6 +380,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .page-content .connect {
+    font-size: 38pt;
+  }
 }
 
 .page-content .connect a {
@@ -392,6 +427,14 @@ a {
   background-color: #306090;
   cursor: pointer;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 15pt;
+    min-width: 200px;
+    padding: 10px 20px;
+  }
 }
 
 .btn:hover {

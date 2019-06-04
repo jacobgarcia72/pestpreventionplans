@@ -9,13 +9,17 @@
   align-items: center
   font-size: 17pt
   line-height: 25pt
+  @media screen and (max-width: $md)
+    font-size: 14pt
+    line-height: 20pt
+    padding: 0 0 24px
 
   .header 
     margin: 0 auto 10px
-    width: 100%
+    width: 100% 
     text-align: center
 
-  .section 
+  div.section 
     padding: 36px 0 30px
     width: 80vw 
     max-width: 640px 
@@ -23,14 +27,13 @@
     flex-direction: column 
     align-items: center
     @media screen and (max-width: $md)
-      padding-top: 18px
-    p 
-      font-size: 16pt
-      margin-top: 0
+      padding: 10px 0 10px
 
   .connect 
     font-size: 54pt 
     display: flex
+    @media screen and (max-width: $md)
+      font-size: 38pt 
     a 
       margin: 0 15px
       transition: transform 200ms

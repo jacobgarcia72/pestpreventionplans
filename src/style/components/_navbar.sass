@@ -27,17 +27,20 @@
     .home
       font-size: 1.5rem
       text-align: center
+      @media screen and (max-width: $md)
+        font-size: 1.2rem
     .links
       display: flex 
       @media screen and (max-width: $md)
         position: fixed 
-        background-color: rgba(0,0,0,.92)
+        background-color: rgba(0,0,0,.95)
         height: 100vh
         flex-direction: column
         justify-content: center
         width: 100%
         a 
           min-width: 100vw
+          transform: translateY(-3vh)
           &:hover 
             background-color: $brand-btn !important
       a
