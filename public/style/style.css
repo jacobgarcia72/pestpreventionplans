@@ -130,11 +130,13 @@ body {
 
 .Landing .h1 {
   font-size: 4rem;
+  font-weight: 300;
   margin: 0;
 }
 
 .Landing .h2 {
   font-size: 1.8rem;
+  font-weight: 300;
   font-style: italic;
   margin: 8pt 0 36pt 0;
 }
