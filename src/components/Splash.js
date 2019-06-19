@@ -8,6 +8,11 @@ export default class Splash extends Component {
     window.addEventListener('resize', this.setTop);
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.setTop);
+    window.removeEventListener('resize', this.setTop);
+  }
+
   setTop = ()=> {
     let img = document.querySelector('.Splash .image');
     let whiteSpace = document.getElementById('white-space');

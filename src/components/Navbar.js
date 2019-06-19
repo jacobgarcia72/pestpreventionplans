@@ -18,6 +18,11 @@ export default class Navbar extends Component {
     window.addEventListener('resize', this.setWidth);
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.setHeight);
+    window.removeEventListener('resize', this.setWidth);
+  }
+
   setHeight = ()=> {
     let navbar = document.querySelector('.Navbar');
     if (!navbar || this.state.mobileDisplay) return;

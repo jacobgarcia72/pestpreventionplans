@@ -11,8 +11,9 @@ export default ()=> (
     <div className="page-content">
       <div className="section">
         <p>
-          "My first job doing pest control was just a summer job, but since then it has sort of stuck with me. I enjoy meeting with people each day and helping to solve their pest control needs. I feel like this is a job that really plays to my strengths and interests because even as a child I was interested in entomology and zoology, and I love how this is a job that allows me to travel and interact with people daily."
+          "I chose to work in this industry because I love working with clients and solving their pest control issues. I have had an interest in entomology, zoology, and biology since I was a child and I love meeting new people. I enjoy working in a field that allows me to use my knowledge and talents on a daily basis to help homes and businesses to be pest free."
         </p>
+        <p>Brandon Garcia, Owner</p>
       </div>
       <Link to="/reviews" className="btn">Reviews</Link>
     </div>

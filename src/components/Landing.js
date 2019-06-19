@@ -20,7 +20,7 @@ export default ()=> (
 
       <div className="section">
         <div>
-          <i className="fas fa-quote-left"></i>&nbsp;In half a week I've already seen the difference and we are super appreciative about that! Will keep up with maintenance and continue to go with Pest Prevention Plans!&nbsp;<i className="fas fa-quote-right"></i>
+          Pest Prevention Plans is highly rated on multiple platforms.
         </div>
       </div>
 
