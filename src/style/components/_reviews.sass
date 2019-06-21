@@ -48,7 +48,7 @@
           flex-wrap: wrap
           line-height: 1.4
           margin: 32px 0
-          @media (max-width: 900px)
+          @media screen and (max-width: 900px)
             flex-direction: column 
             margin: 18px 0
           div
@@ -57,13 +57,13 @@
       #facebook        
         .fb-page 
           margin-bottom: 18px
-          @media (max-width: 900px)
+          @media screen and (max-width: 900px)
             margin-bottom: 6px
-          @media (max-width: 520px)
+          @media screen and (max-width: 520px)
             display: none
         .facebook-link 
           display: none
-          @media (max-width: 520px)
+          @media screen and (max-width: 520px)
             display: flex
             justify-content: center
             margin-bottom: 18px
@@ -71,40 +71,40 @@
           font-size: 14pt
         p 
           margin-top: 18px 
-          @media (max-width: 900px)
+          @media screen and (max-width: 900px)
             margin-top: 6px
 
 
       #yelp 
         .reviewer
-          @media (max-width: 930px)
+          @media screen and (max-width: 930px)
             margin: 10px 0
-          @media (max-width: 650px)
-            font-size: 14pt
-          @media (max-width: 560px)
+          @media screen and (max-width: 560px)
             margin: 4px 0 
         .yelp-badge
-          @media (max-width: 380px)
-            display: none
+          padding-bottom: 12px
         p
-          @media (max-width: 1170px)
+          @media screen and (max-width: 1170px)
             font-size: 16pt
             margin-bottom: 8pt
             line-height: 1.4
-          @media (max-width: 930px)
+          @media screen and (max-width: 930px)
             font-size: 15pt
             margin-bottom: 7pt
-          @media (max-width: 780px)
-            font-size: 13.5pt
-          @media (max-width: 650px)
-            font-size: 13pt
-          @media (max-width: 560px)
-            font-size: 12.5pt
-          @media (max-width: 560px)
-            line-height: 1.3
-          @media (max-width: 500px)
-            font-size: 12pt
-            margin-bottom: 0
+           @media screen and (max-width: 434px)
+            font-size: 16pt
+            margin-bottom: 8pt
+            line-height: 1.4
+          &#first-p
+            @media screen and (max-width: 434px)
+              display: none
+        .hide-text 
+          @media screen and (max-width: $md)
+            display: none
+        .hide-more-text 
+          @media screen and (max-width: 620px)
+            display: none
+
 
 
     .arrow 
@@ -112,15 +112,18 @@
       color: rgba(0,0,0,0.5) 
       max-width: 14vw
       cursor: pointer
-      @media (max-width: 560px)
+      @media screen and (max-width: 560px)
         font-size: 30pt 
       &:hover
         color: rgba(0,0,0,0.65) 
 
 
-  .btn-action 
+  a.btn.btn-action 
     padding: 20px 40px
     font-size: 15pt
+    @media screen and (max-width: 360px)
+      padding: 15px 25px
+      font-size: 13pt 
 
 .fade-in
   animation: 400ms linear 0s 1 fadeIn forwards

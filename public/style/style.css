@@ -262,7 +262,7 @@ body {
   margin: 32px 0;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .Reviews .carousel .slide #home-adviser .ratings {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -280,13 +280,13 @@ body {
   margin-bottom: 18px;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .Reviews .carousel .slide #facebook .fb-page {
     margin-bottom: 6px;
   }
 }
 
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
   .Reviews .carousel .slide #facebook .fb-page {
     display: none;
   }
@@ -296,7 +296,7 @@ body {
   display: none;
 }
 
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
   .Reviews .carousel .slide #facebook .facebook-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -316,37 +316,29 @@ body {
   margin-top: 18px;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .Reviews .carousel .slide #facebook p {
     margin-top: 6px;
   }
 }
 
-@media (max-width: 930px) {
+@media screen and (max-width: 930px) {
   .Reviews .carousel .slide #yelp .reviewer {
     margin: 10px 0;
   }
 }
 
-@media (max-width: 650px) {
-  .Reviews .carousel .slide #yelp .reviewer {
-    font-size: 14pt;
-  }
-}
-
-@media (max-width: 560px) {
+@media screen and (max-width: 560px) {
   .Reviews .carousel .slide #yelp .reviewer {
     margin: 4px 0;
   }
 }
 
-@media (max-width: 380px) {
-  .Reviews .carousel .slide #yelp .yelp-badge {
-    display: none;
-  }
+.Reviews .carousel .slide #yelp .yelp-badge {
+  padding-bottom: 12px;
 }
 
-@media (max-width: 1170px) {
+@media screen and (max-width: 1170px) {
   .Reviews .carousel .slide #yelp p {
     font-size: 16pt;
     margin-bottom: 8pt;
@@ -354,41 +346,28 @@ body {
   }
 }
 
-@media (max-width: 930px) {
+@media screen and (max-width: 930px) {
   .Reviews .carousel .slide #yelp p {
     font-size: 15pt;
     margin-bottom: 7pt;
   }
 }
 
-@media (max-width: 780px) {
-  .Reviews .carousel .slide #yelp p {
-    font-size: 13.5pt;
+@media screen and (max-width: 434px) {
+  .Reviews .carousel .slide #yelp p#first-p {
+    display: none;
   }
 }
 
-@media (max-width: 650px) {
-  .Reviews .carousel .slide #yelp p {
-    font-size: 13pt;
+@media screen and (max-width: 768px) {
+  .Reviews .carousel .slide #yelp .hide-text {
+    display: none;
   }
 }
 
-@media (max-width: 560px) {
-  .Reviews .carousel .slide #yelp p {
-    font-size: 12.5pt;
-  }
-}
-
-@media (max-width: 560px) {
-  .Reviews .carousel .slide #yelp p {
-    line-height: 1.3;
-  }
-}
-
-@media (max-width: 500px) {
-  .Reviews .carousel .slide #yelp p {
-    font-size: 12pt;
-    margin-bottom: 0;
+@media screen and (max-width: 620px) {
+  .Reviews .carousel .slide #yelp .hide-more-text {
+    display: none;
   }
 }
 
@@ -399,7 +378,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 560px) {
+@media screen and (max-width: 560px) {
   .Reviews .carousel .arrow {
     font-size: 30pt;
   }
@@ -409,9 +388,16 @@ body {
   color: rgba(0, 0, 0, 0.65);
 }
 
-.Reviews .btn-action {
+.Reviews a.btn.btn-action {
   padding: 20px 40px;
   font-size: 15pt;
+}
+
+@media screen and (max-width: 360px) {
+  .Reviews a.btn.btn-action {
+    padding: 15px 25px;
+    font-size: 13pt;
+  }
 }
 
 .fade-in {
